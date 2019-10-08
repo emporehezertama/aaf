@@ -129,7 +129,7 @@
                                                 </th>
                                             </tr>
                                             <tbody>
-                                            @if($data->inventaris_mobil)
+                                            @if(\App\User::where('id', $data->user_id)->first()->inventaris_mobil)
                                              <tr>
                                                 <td>12</td>
                                                 <td colspan="4">
@@ -141,13 +141,13 @@
                                                             <th>No Polisi</th>
                                                             <th colspan="3">Status Mobil</th>
                                                         </tr>
-                                                        @foreach($data->inventaris_mobil as $item)
+                                                        @foreach(\App\User::where('id', $data->user_id)->first()->inventaris_mobil as $item)
                                                         <input type="hidden" name="inventaris_mobil[]" value="{{ $item->id }}" />
                                                         <tr> 
-                                                            <td>{{ $item->inventaris->tipe_mobil }}</td>
-                                                            <td>{{ $item->inventaris->tahun }}</td>
-                                                            <td>{{ $item->inventaris->no_polisi }}</td>
-                                                            <td>{{ $item->inventaris->status_mobil }}</td>
+                                                            <td>{{ $item->tipe_mobil }}</td>
+                                                            <td>{{ $item->tahun }}</td>
+                                                            <td>{{ $item->no_polisi }}</td>
+                                                            <td>{{ $item->status_mobil }}</td>
                                                             <td style="text-align: center;">
                                                                 @if($item->status == 1)
                                                                     <label class="bt btn-success btn-xs"><i class="fa fa-check"></i> </label>
@@ -168,7 +168,7 @@
                                             </tr>
                                             @endif
 
-                                            @if($data->inventaris)
+                                            @if(\App\User::where('id', $data->user_id)->first()->inventaris)
                                             <tr>
                                                 <td>13</td>
                                                 <td colspan="4">
@@ -178,11 +178,11 @@
                                                             <th>Jenis Inventaris</th>
                                                             <th colspan="3">Keterangan</th>
                                                         </tr>
-                                                        @foreach($data->inventaris as $item)
+                                                        @foreach(\App\User::where('id', $data->user_id)->first()->inventaris as $item)
                                                         <input type="hidden" name="inventaris[]" value="{{ $item->id }}" />
                                                         <tr>
-                                                            <td>{{ $item->inventaris->jenis }}</td>
-                                                            <td>{{ $item->inventaris->description }}</td>
+                                                            <td>{{ $item->jenis }}</td>
+                                                            <td>{{ $item->description }}</td>
                                                             <td style="text-align: center;">
                                                                 @if($item->status == 1)
                                                                     <label class="bt btn-success btn-xs"><i class="fa fa-check"></i> </label>

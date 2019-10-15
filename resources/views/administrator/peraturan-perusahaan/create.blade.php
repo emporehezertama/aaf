@@ -1,6 +1,6 @@
 @extends('layouts.administrator')
 
-@section('title', 'Product Information - PT. Arthaasia Finance')
+@section('title', 'Internal Information - PT. Arthaasia Finance')
 
 @section('sidebar')
 
@@ -15,12 +15,12 @@
     <div class="container-fluid">
         <div class="row bg-title">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title">Form Product Information</h4> </div>
+                <h4 class="page-title">Form Internal Information</h4> </div>
             <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
                 <ol class="breadcrumb">
                     <li><a href="javascript:void(0)">Dashboard</a></li>
-                    <li class="active">Product Information</li>
+                    <li class="active">Internal Information</li>
                 </ol>
             </div>
             <!-- /.col-lg-12 -->
@@ -30,7 +30,7 @@
             <form class="form-horizontal" enctype="multipart/form-data" action="{{ route('administrator.peraturan-perusahaan.store') }}" method="POST">
                 <div class="col-md-12">
                     <div class="white-box">
-                        <h3 class="box-title m-b-0">Product Information</h3>
+                        <h3 class="box-title m-b-0">Internal Information</h3>
                         <br />
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">

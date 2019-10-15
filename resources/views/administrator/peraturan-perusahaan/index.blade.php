@@ -1,6 +1,6 @@
 @extends('layouts.administrator')
 
-@section('title', 'Product Information - PT. Arthaasia Finance')
+@section('title', 'Internal Information - PT. Arthaasia Finance')
 
 @section('sidebar')
 
@@ -23,7 +23,7 @@
                 <a href="{{ route('administrator.peraturan-perusahaan.create') }}" class="btn btn-success btn-sm pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light"> <i class="fa fa-plus"></i> TAMBAH</a>
                 <ol class="breadcrumb">
                     <li><a href="javascript:void(0)">Dashboard</a></li>
-                    <li class="active">Product Information</li>
+                    <li class="active">Internal Information</li>
                 </ol>
             </div>
             <!-- /.col-lg-12 -->
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="white-box">
-                    <h3 class="box-title m-b-0">Manage Product Information</h3>
+                    <h3 class="box-title m-b-0">Manage Internal Information</h3>
                     <br />
                     <div class="table-responsive">
                         <table id="data_table" class="display nowrap" cellspacing="0" width="100%">

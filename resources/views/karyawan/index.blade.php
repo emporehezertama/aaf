@@ -88,7 +88,7 @@
             </div>
             <div class="col-lg-4 col-sm-4 col-md-4">
                 <div class="panel panel-themecolor" style="margin-bottom: 20px">
-                    <div class="panel-heading" style="background: #53e69d; border:1px solid #53e69d;"><i class="fa fa-gavel"></i> Product Information</h2></div>
+                    <div class="panel-heading" style="background: #53e69d; border:1px solid #53e69d;"><i class="fa fa-gavel"></i> Internal Information</h2></div>
                     <div class="panel-body">
                         @foreach($peraturan_perusahaan as $item)
                             <div class="col-md-12" style="padding-bottom:0;padding-top:0;">
@@ -107,7 +107,7 @@
                             <hr style="margin-top: 5px; margin-bottom:5px;" />
                         @endforeach
                         <br />
-                        <a href="" class="btn btn-rounded btn-success btn-block p-10" style="color: white;"><i class="fa fa-gavel"></i> More Product Information</a>
+                        <a href="" class="btn btn-rounded btn-success btn-block p-10" style="color: white;"><i class="fa fa-gavel"></i> More Internal Information</a>
                     </div>
                 </div>
             </div>

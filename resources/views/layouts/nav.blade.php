@@ -170,7 +170,7 @@
                     <a href="{{ route('administrator.internal-memo.index') }}"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu">Internal Memo</span></a>
                 </li>
                 <li>
-                    <a href="{{ route('administrator.peraturan-perusahaan.index') }}"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu">Product Information</span></a>
+                    <a href="{{ route('administrator.peraturan-perusahaan.index') }}"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu">Internal Information</span></a>
                 </li>
             </ul>
         </li>

@@ -59,7 +59,7 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-md-6">
                 <div class="panel panel-themecolor">
-                    <div class="panel-heading" style="background: #53e69d; border:1px solid #53e69d;"><i class="fa fa-gavel"></i> Product Information</h2>
+                    <div class="panel-heading" style="background: #53e69d; border:1px solid #53e69d;"><i class="fa fa-gavel"></i> Internal Information</h2>
                         <form method="GET" action="" style="float: right; width: 40%;margin-top: -9px;">
                             <div class="form-group">
                                 <input type="text" name="keyword-peraturan" class="form-control" style="float:left;width: 80%;margin-right: 5px;height: 28px;" placeholder="Search Here ..." value="{{ isset($_GET['keyword-peraturan']) ? $_GET['keyword-peraturan'] : '' }}" >
